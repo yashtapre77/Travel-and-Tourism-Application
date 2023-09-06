@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <VideoView
+        android:id="@+id/reels_videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/reels_video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="550dp"
+        android:text="Reels Title"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/reels_video_decription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:text="Reels Description"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reels_video_title" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/reels_more_bg"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/white_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706" />
+
+    <ImageView
+        android:id="@+id/reel_readmore"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/read_more"
+        app:layout_constraintBottom_toBottomOf="@+id/reels_more_bg"
+        app:layout_constraintEnd_toEndOf="@+id/reels_more_bg"
+        app:layout_constraintStart_toStartOf="@+id/reels_more_bg"
+        app:layout_constraintTop_toTopOf="@+id/reels_more_bg" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/reel_fav_bg"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/white_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.586" />
+
+    <ImageView
+        android:id="@+id/reel_isFav"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="1dp"
+        android:tag="0"
+        android:src="@drawable/orange_unfavourite"
+        app:layout_constraintBottom_toBottomOf="@+id/reel_fav_bg"
+        app:layout_constraintEnd_toEndOf="@+id/reel_fav_bg"
+        app:layout_constraintStart_toStartOf="@+id/reel_fav_bg"
+        app:layout_constraintTop_toTopOf="@+id/reel_fav_bg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

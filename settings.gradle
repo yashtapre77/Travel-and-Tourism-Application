@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+
+dependencyResolutionManagement{
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories{
+        google()
+        mavenCentral()
+        jcenter()
+
+        maven{url "https://jitpack.io"}
+    }
+}
+
+rootProject.name = "Travel and Tourism Guide"
+include ':app'

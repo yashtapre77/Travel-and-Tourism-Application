@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Tourism Guide</string>
+    <string name="splash_name">Travel and Tourism Guide</string>
+    <string name="label">Tourism Guide</string>
+    <string name="welcome">Welcome</string>
+    <string name="start">Let\'s Get Started</string>
+    <string name="h_email">Email</string>
+    <string name="h_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="no_acc">Don\'t Have an Account</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="SignIn">Sign In</string>
+    <string name="fullname">Enter Full Name</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="haveAccount">Already have an Account</string>
+    <string name="api_key">AIzaSyDrsXCxeGvyJSKnAmwgEDKYiM330YyMRDc</string>
+    <string name="default_info_title">Current Location</string>
+    <string name="default_info_snippet">Snippet</string>
+    <string name="pick_place">Select the Place</string>
+    <string name="splash_screen">Travel and Tourism Guide </string>
+    <string name="splash_etc_text">Explore\n\t\t\t beauty of India</string>
+
+</resources>

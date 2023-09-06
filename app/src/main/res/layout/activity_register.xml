@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@color/Alice_Blue"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/backoff"
+        android:onClick="func_back_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:contentDescription="backoff">
+        
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/RG_back_btn"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/back_btn"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/backoff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="40sp"
+                android:textColor="@color/SS_TextColor"
+                android:textStyle="bold"
+                android:text="@string/SignUp"/>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                app:neumorph_shapeType="pressed">
+
+                <EditText
+                    android:id="@+id/RG_input_fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/fullname"
+                    android:inputType="text"
+                    android:textColorHint="@color/SS_TextColor"
+                    android:padding="15dp"
+                    android:textColor="@color/SS_TextColor"
+                    />
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="8dp"
+                app:neumorph_shapeType="pressed">
+
+            <EditText
+                android:id="@+id/RG_input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/h_email"
+                android:textColorHint="@color/SS_TextColor"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/SS_TextColor"
+                />
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/RG_input_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:background="@android:color/transparent"
+                    android:longClickable="false"
+                    android:textColorHint="@color/SS_TextColor"
+                    android:textColor="@color/SS_TextColor"/>
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="8dp"
+                style="@style/Widget.Neumorph.CardView"
+                app:neumorph_shapeType="pressed">
+                <RadioGroup
+                    android:id="@+id/RG_radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="3">
+                    <RadioButton
+                        android:id="@+id/RG_input_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/male"
+                        android:textColor="@color/SS_TextColor"
+                        android:textSize="14sp"/>
+                    <RadioButton
+                        android:id="@+id/RG_input_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/female"
+                        android:textColor="@color/SS_TextColor"
+                        android:textSize="14sp"/>
+
+                </RadioGroup>
+                
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/RG_register_btn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/SignUp"
+                android:textAllCaps="false"
+                android:textColor="@color/SS_TextColor"
+                android:textSize="16sp"
+                style="@style/Widget.Neumorph.Button" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/haveAccount"
+                    android:textColor="@color/SS_TextColor"/>
+                <TextView
+                    android:id="@+id/RG_logIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SignIn"
+                    android:textColor="@color/SS_TextColor"
+                    android:layout_marginLeft="6dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RG_progressbar"
+                    style="?android:attr/progressBarStyle"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Alice_Blue"
+    tools:context=".LoginPage">
+
+    <LinearLayout
+        android:id="@+id/login_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label"
+            android:textColor="@color/SS_TextColor"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/LP_aeroplane"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/login_head"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/aeroplane" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LP_aeroplane"
+        android:orientation="vertical"
+        android:visibility="visible">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/welcome"
+            android:textColor="@color/SS_TextColor"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/start"
+            android:textColor="@color/SS_TextColor"
+            android:textSize="20sp" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            app:neumorph_shapeType="pressed">
+        <EditText
+            android:id="@+id/LP_input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/h_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="@color/SS_TextColor"
+            android:textColorHint="@color/SS_TextColor"/>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            app:neumorph_shapeType="pressed">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LP_input_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/h_password"
+                android:inputType="textPassword"
+                android:longClickable="false"
+                android:padding="15dp"
+                android:textColor="@color/SS_TextColor"
+                android:textColorHint="@color/SS_TextColor" />
+        </soup.neumorphism.NeumorphCardView>
+        
+        <soup.neumorphism.NeumorphButton
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/LP_login_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/btn_login"
+            android:textAllCaps="false"
+            android:textColor="@color/SS_TextColor"
+            android:textSize="16sp"
+            app:neumorph_shapeType="flat"
+            style="@style/Widget.Neumorph.Button"/>
+
+        <LinearLayout
+            android:id="@+id/LP_signUpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_acc"
+                android:textColor="@color/SS_TextColor"/>
+
+            <TextView
+                android:id="@+id/LP_SignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SignUp"
+                android:textColor="@color/SS_TextColor"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LP_progressbar"
+            style="?android:attr/progressBarStyle"
+            android:visibility="invisible"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    
+
+</RelativeLayout>
