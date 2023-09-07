@@ -4,3 +4,5 @@ repository of information about India's diverse tourist destinations. Whether yo
 iconic landmarks that make India a captivating destination.
 
 The application empowers users to seamlessly explore India's beauty, culture, and history. Its user-friendly interface simplifies trip planning, allowing users to discover new destinations, read comprehensive descriptions, view stunning images, and access real-time maps for easy navigation. Users can also engage with fellow travelers by leaving reviews and ratings for visited places and sharing their experiences on social media platforms.
+
+![Splash Screen](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/a2a0269a-a82f-40d8-be5a-d748f48ab9fc)
