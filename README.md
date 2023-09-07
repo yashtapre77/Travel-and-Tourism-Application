@@ -20,12 +20,14 @@ Integrating Google Maps, this module offers real-time directions and tracking, e
 ![Splash Screen](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/a2a0269a-a82f-40d8-be5a-d748f48ab9fc)
 ![User Login](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/e353641a-05c1-4c55-a27b-9925117c5ef0)
 ![User Registration](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/a6db486c-203c-4535-9c53-73f5b92e69f7)
-![Accounts Page](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/aef7cad8-d863-4ccb-83df-c4385c244872)
+![Home Screen](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/da73aa7f-c193-474a-947d-2e8f126d1b43)
 ![Types Page](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/83958ef9-6b69-4f6f-b7ad-fd705c2471b1)
-![Gallery Page](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/f2063817-437c-48f4-8486-646326ab691b)
 ![Search Page](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/4d426b0a-bcd7-46d4-9237-e22da51792b6)
-![Shorts Page](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/a4e243da-fe9e-45f4-8884-7e67350b5442)
+![Description Page](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/152ec12b-cc98-45cf-a180-e38fcb1be997)
+![Gallery Page](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/f2063817-437c-48f4-8486-646326ab691b)
 ![Google Maps Page](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/55c6011f-40b2-463b-b813-87207b9f119b)
+![Shorts Page](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/a4e243da-fe9e-45f4-8884-7e67350b5442)
+![Accounts Page](https://github.com/yashtapre77/Travel-and-Tourism-Application/assets/144268460/aef7cad8-d863-4ccb-83df-c4385c244872)
 
 
 
